@@ -1,0 +1,22 @@
+.post {
+  display: flex;
+  padding: 12px;
+
+  > img {
+    margin-right: 24px;
+  }
+
+  > div {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+
+    > h4 {
+      color: gray;
+    }
+
+    > p {
+      color: darkgray;
+    }
+  }
+}
