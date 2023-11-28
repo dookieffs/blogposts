@@ -35,26 +35,28 @@ function Post({
       <div>
         <h4>{title}</h4>
         <p>{content}</p>
-        <span>
-          Comments count: <b>{commentCount}</b>
-        </span>
-        <span>
+        <div className="clear-left">
+          <span>
+            Comments count: <b>{commentCount}</b>
+          </span>
+          <span>
+            <p>
+              Full name:{" "}
+              <b>
+                {user?.firstname} {user?.lastname}
+              </b>
+            </p>
+          </span>
           <p>
-            Full name:{" "}
-            <b>
-              {user?.firstname} {user?.lastname}
-            </b>
+            Category: <b>{category}</b>
           </p>
-        </span>
-        <p>
-          Category: <b>{category}</b>
-        </p>
-        <p>
-          Published at: <b>{publishedAt}</b>
-        </p>
-        <p>
-          Updated at: <b>{updatedAt}</b>
-        </p>
+          <p>
+            Published at: <b>{publishedAt}</b>
+          </p>
+          <p>
+            Updated at: <b>{updatedAt}</b>
+          </p>
+        </div>
         <Link
           to={`/posts/${slug}`}
           className="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 text-center mb-2"

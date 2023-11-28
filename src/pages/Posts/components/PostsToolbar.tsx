@@ -68,7 +68,7 @@ export function PostsToolbar({
           >
             Filter by:
           </label>
-          <div className="justify-center">
+          <div className="justify-center" style={{ maxWidth: "300px" }}>
             {Object.keys(filterOptions).map((filterKey) => (
               <select
                 id="filter"
